@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT-Academy</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('./files/fonts/Gilroy-Regular.eot');
+            src: local('Gilroy Regular'), local('Gilroy-Regular'),
+                url('./files/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+                url('./files/fonts/Gilroy-Regular.woff') format('woff'),
+                url('./files/fonts/Gilroy-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        function expandit(){
+            obj = document.getElementById("hidden");
+            btn = document.getElementById("butttn");
+            if (obj.style.display=="none") {
+                obj.style.display="";
+                btn.innerHTML="Скрыть";
+            }
+            else {
+                obj.style.display="none";
+                btn.innerHTML="Показать ещё";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="hdr_bg">
+        <div class="container">
+            <div class="hdr">
+                <div class="img1">
+                    <img src="./files/lOGO2_3.png" alt="course-logo">
+                </div>
+                <div class="img2">
+                    <img src="./files/logo-tiktok.png" alt="tiktok">
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="side-information">Вебинар: 1 октября, 2020</div>
+    </div>
+    <div class="bg">
+        <div class="container">
+            <div class="white-header">
+                Как набрать 10000 подписчиков за 1 неделю в TikTok
+            </div>
+            <div class="ph_all">
+                <img src="./files/mainphone.png" alt="mokup">
+            </div>
+            <div class="centres">
+                <span class="mphtxt">Результат за 2 недели</span>
+            </div>
+            <span class="old-price">Старая цена: <div class="za4"> 990 р.</div></span>
+            <span class="stock">Первым <span class="red">30 </span>записавшимся:<br> <span class="red">бесплатно</span></span>
+            <a class="red-but" href="#ord-form">Забронировать место</a>
+            <div class="separator_16"></div>
+            <div class="small-txt white">+ Подарок Чек лист: "Какие видео набирают от 100к просмотров. Октябрь 2020"</div>
+        </div>
+    </div>
+    <div class="bg_white pad-40">
+        <div class="container">
+            <span class="black-header">Наши ученики</span>
+            <div class="name-stud">
+                <img class="circle" src="./files/1case.jpg" alt="">
+                <span class="stud">@3d.irin</span>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ph_all">
+                <div class="ph_two">
+                    <img src="./files/before_1.jpg" alt="mokup">
+                    <div class="mini-red">до</div>
+                </div>
+                <div class="ph_two"></div>
+                <div class="ph_two">
+                    <img src="./files/after_1.jpg" alt="mokup">
+                    <div class="mini-red">после</div>
+                </div>
+            </div>
+        </div>
+        <div class="side-information">11К подписчиков за неделю</div>
+        <div id="hidden" class="hidden_block" style="display:none">
+            <div class="container">
+                <div class="name-stud">
+                    <img class="circle" src="./files/2case.jpg" alt="">
+                    <span class="stud">@natural_ok</span>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="ph_all">
+                    <div class="ph_two">
+                        <img src="./files/2DO.jpg" alt="mokup">
+                        <div class="mini-red">до</div>
+                    </div>
+                    <div class="ph_two"></div>
+                    <div class="ph_two">
+                        <img src="./files/2Posle.jpg" alt="mokup">
+                        <div class="mini-red">после</div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-information">65К подписчиков за месяц</div>
+            <div class="container">
+                <div class="name-stud">
+                    <img class="circle" src="./files/3case.jpg" alt="">
+                    <span class="stud">@sipsonsmem</span>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="ph_all">
+                    <div class="ph_two">
+                        <img src="./files/3DO.jpg" alt="mokup">
+                        <div class="mini-red">до</div>
+                    </div>
+                    <div class="ph_two"></div>
+                    <div class="ph_two">
+                        <img src="./files/3Posle.jpg" alt="mokup">
+                        <div class="mini-red">после</div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-information">10К подписчиков за 8 дней</div>
+        </div>
+        <div class="container pad-40u">
+            <div id="butttn" class="red-but" style="cursor: pointer;" onClick="expandit()">Показать ещё</div>
+        </div>
+        <!-- <div class="side-information">За месяц 55000 тысяч подписчиков</div>
+        <div class="container">
+            <div class="separator_36"></div>
+            <div class="left-side">
+                <div class="line"></div>
+            </div>
+            <div class="name-avatar">
+                <div class="bl1">
+                    <img src="./files/avatar.png" alt="">
+                </div>
+                <div class="bl2">Иван Иванов</div>
+                <div class="bl3">Блогер</div>
+            </div>
+            <div class="icons">
+                <div class="vec">
+                    <img src="./files/Vector0.svg" alt="">
+                </div>
+                <div class="vec1">
+                    <img src="./files/Vector.svg" alt="">
+                </div>
+                <div class="vec2">
+                    <img src="./files/5.0.png" alt="">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <span class="small-txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуальнослухового восприятия.</span>
+            <div class="red-but separator_36">Показать ещё</div>
+        </div>
+    </div> -->
+    </div>
+    <div class="bg">
+        <div class="container">
+            <span class="white-header">Для кого этот вебинар?</span>
+            <div class="advice">
+                <div class="sq">
+                    <img src="./files/stargrp.svg" alt="">
+                </div>
+                <span class="big-txt white separator_26_16">Новичков, которые хотят стать
+                    популярными <br></span>
+                <span class="small-txt white">Сейчас тикток идеальная площадка,
+                    чтобы быстро набрать популярность и зарабатывать на этом деньги. Вам не
+                    нужно годами набирать аудиторию</span>
+            </div>
+            <div class="advice">
+                <div class="sq">
+                    <img src="./files/normgrp.png" alt="">
+                </div>
+                <span class="big-txt white separator_26_16">У кого видео не набирают
+                    просмотры <br></span>
+                <span class="small-txt white">Мы расскажем подробнее об алгоритмах. Также покажем секретные техники набирания от 100к просмотров</span>
+            </div>
+            <div class="advice">
+                <div class="sq sh-sh">
+                    <img src="./files/3-handshake.svg" alt="">
+                </div>
+                <span class="big-txt white separator_26_16">Для бизнеса</span>
+                <span class="small-txt white"><br>Сейчас тикток как инстаграм в 2015 году. Сейчас самое время начать создавать свою страницу в тиктоке. Вы сможете прогревать и продавать товары и услуги</span>
+            </div>
+            <a class="red-but" href="#ord-form">Забронировать место</a>
+        </div>
+    </div>
+    <div class="bg_white">
+        <div class="container">
+            <span class="black-header">Кто ведёт вебинар?</span>
+        </div>
+    </div>
+    <div class="bg_white">
+        <div class="owner">
+            <img class="owner" src="./files/course-owner 2.png" alt="">
+        </div>
+        <div class="container">
+            <div class="rect">
+                <span class="erik white">Эрик гайнулин</span>
+                <div class="inl">
+                    <div class="minsq">
+                        <img src="./files/check.png" alt="">
+                    </div>
+                    <span class="small-txt white">Набрал на 11 аккаунтах больше 100 000 подписчиков</span>
+                </div>
+                <div class="inl">
+                    <div class="minsq">
+                        <img src="./files/check.png" alt="">
+                    </div>
+                    <span class="small-txt white fix">Консультировал больше 400 бизнес аккаунтов</span>
+                </div>
+                <div class="inl">
+                    <div class="minsq">
+                        <img src="./files/check.png" alt="">
+                    </div>
+                    <span class="small-txt white">Занимается ТикТоком с 2017 года</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <div class="container">
+            <span class="white-header separator_26">Забронируйте место</span>
+            <span class="old-price">Старая цена: <div class="za4"> 990 р.</div></span>
+            <span class="stock">Первым <span class="red">30 </span>записавшимся:<br> <span class="red">бесплатно</span></span>
+            <div class="book">
+                <img src="./files/main-img.png" alt="book">
+            </div>
+            <div class="rect1"><span class="fz16">+ Подарок. Чек-Лист: «Какие видео набирают от 100к просмотров. Октябрь 2020»</span></div>
+            <form id="ord-form" action="send.php" method="POST" name="order-form" accepted-charset="utf-8">
+                <div class="input-prepend">
+                    <input class="input-form" type="text" name="name" placeholder="Введите ваше имя" maxlength="255">
+                </div>
+                <div class="input-prepend">
+                    <input class="input-form" type="text" name="email" placeholder="Введите ваш email" maxlength="255">
+                </div>
+                <div class="input-prepend">
+                    <input class="input-form" type="text" name="phone" placeholder="Введите ваш телефона" maxlength="25">
+                </div>
+                <div>
+                    <div class="bron">
+                        <input class="red-but" type="submit" value="Забронировать место">
+                    </div> 
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
