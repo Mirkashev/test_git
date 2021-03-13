@@ -67,8 +67,26 @@ header nav .info a {
 
 header nav .info button {
   display: none;
+  background-image: url(../files/menu.png);
+  background-color: white;
   width: 40px;
-  height: 18px;
+  height: 32px;
+  border: none;
+}
+
+header .hidden-nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  border-bottom: 2px solid #FA4A0C;
+  display: none;
+}
+
+header .hidden-nav a {
+  margin: 2%;
 }
 
 header .header__section {
@@ -205,6 +223,7 @@ footer .footer__section .download {
 }
 
 footer .footer__section .download a {
+  font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +364,95 @@ footer nav .info a {
             flex-direction: column;
   }
   footer nav .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  body {
+    min-width: 400px;
+  }
+  header .group-ph {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: calc(-95px + 395 * ((100vw - 320px) / 1120));
+    width: calc(458px + 200 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 360px) {
+  header .group-ph {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: calc(-90px + 390 * ((100vw - 320px) / 1120));
+    width: calc(458px + 200 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 350px) {
+  header .group-ph {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: calc(-85px + 385 * ((100vw - 320px) / 1120));
+    width: calc(458px + 200 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 340px) {
+  header .group-ph {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: calc(-80px + 380 * ((100vw - 320px) / 1120));
+    width: calc(458px + 200 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 330px) {
+  header .group-ph {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: calc(-75px + 375 * ((100vw - 320px) / 1120));
+    width: calc(458px + 200 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 320px) {
+  header .group-ph {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: calc(-70px + 370 * ((100vw - 320px) / 1120));
+    width: calc(458px + 200 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 310px) {
+  header .group-ph {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: calc(-65px + 365 * ((100vw - 320px) / 1120));
+    width: calc(458px + 200 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 280px) {
+  header .group-ph {
+    display: none;
+  }
+  header hr {
     display: none;
   }
 }

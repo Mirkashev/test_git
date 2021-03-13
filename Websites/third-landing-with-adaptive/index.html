@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Bolonge</title>
 </head>
-<body>
+<body style="background-color: #FFFFFF;">
     <header>
         <nav>
             <img  src="./files/logo.png" alt="logo">
@@ -17,9 +17,15 @@
                 <a href="">Faq</a>
                 <a href="">Contact</a>
                 <!-- display none не работает для отображения -->
-                <button></button>
+                <button id="menu"></button>
             </div>
         </nav>
+        <div id="hidden" class="hidden-nav">
+            <a href="">Home</a>
+            <a href="">Product</a>
+            <a href="">Faq</a>
+            <a href="">Contact</a>
+        </div>
         <div class="header__section">
             <span class="white">Food app</span>
             <h1 class="white">Why stay hungry when <br>you can order form Bella Onojie</h1>
@@ -89,5 +95,6 @@
             <span style="font-size: 12px;">Copywright 2020 Bella Onojie.com</span>
         </nav>
     </footer>
+    <script src="./scripts/burg.js"></script>
 </body>
 </html>
