@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "NeueMontreal-Regular";
+  src: url("../files/fonts/NeueMontreal-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NeueMontreal-Bold";
+  src: url("../files/fonts/NeueMontreal-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #0C0C0C;
+  color: #CAC3B7;
+}
+
+::selection {
+  background: #0C0C0C;
+  color: #CAC3B7;
+}
+
+a {
+  text-decoration: none;
+  color: #0C0C0C;
+}
+
+body {
+  font-family: NeueMontreal-Regular, sans-serif;
+  color: #0C0C0C;
+  background-color: #CAC3B7;
+  height: auto;
+}
+
+.text_header {
+  font-size: 288px;
+  font-family: NeueMontreal-Bold;
+  white-space: normal;
+}
+
+@media (max-width: 1920px) {
+  .text_header {
+    font-size: calc(55px + 233 * ((100vw - 320px) / 1600));
+  }
+}
+/*# sourceMappingURL=general_styles.css.map */

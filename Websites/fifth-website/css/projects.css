@@ -1,0 +1,216 @@
+main .__content {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 138px;
+  font-size: 22px;
+}
+
+main .__content .__font_roxborough {
+  font-size: 76px;
+  line-height: 66px;
+  padding-bottom: 26px;
+  overflow: hidden;
+}
+
+main .__content .__font_roxborough span {
+  padding-top: 5px;
+  display: block;
+}
+
+main .__content .__little_padding {
+  overflow: hidden;
+}
+
+main .__content .__little_padding span {
+  display: block;
+}
+
+main .__content .__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+
+main .__content .__column .__project_block {
+  overflow: hidden;
+}
+
+main .__content .__column .__project_block img {
+  max-width: 100%;
+}
+
+main .__content .__column .__project_block p {
+  padding-top: 26px;
+  display: block;
+}
+
+main .__content .__column .R {
+  margin-right: 13px;
+}
+
+main .__content .__column .L {
+  margin-left: 13px;
+}
+
+.__container .__elipse_container {
+  margin-top: 140px;
+  margin-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  height: 280px;
+}
+
+.__container .__elipse_container .__elipse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 986px;
+  height: 260px;
+  border: 1px solid #373745;
+  border-radius: 60%;
+  font-size: 36px;
+}
+
+@media (max-height: 780px) {
+  main .__content {
+    max-width: 1280px;
+    padding-top: 99px;
+  }
+  main .__content .__little_padding {
+    padding-bottom: 26px;
+    font-size: 18px;
+  }
+  main .__content h1 {
+    font-size: 56px !important;
+    line-height: 46px !important;
+  }
+  main .__content .__column {
+    padding-top: 0px;
+  }
+  main .__content .__column .__project_block {
+    width: 450px;
+  }
+  main .__content .__column .__project_block img {
+    max-width: 100%;
+  }
+  main .__content .__column .__project_block p {
+    padding-bottom: 26px;
+    font-size: 18px;
+  }
+  main .__content .__column .R {
+    margin-right: 13px;
+  }
+  main .__content .__column .L {
+    margin-left: 13px;
+  }
+  .__container .__elipse_container {
+    height: 240px;
+    margin-top: 70px;
+  }
+  .__container .__elipse_container .__elipse {
+    width: 716px;
+    height: 220px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1276px) {
+  main .__content {
+    padding-top: 138px;
+    max-width: 768px;
+  }
+  main .__content .__little_padding {
+    padding-bottom: 26px;
+    font-size: 22px;
+  }
+  main .__content h1 {
+    font-size: 66px !important;
+    line-height: 56px !important;
+  }
+  main .__content .__column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  main .__content .__column .__project_block {
+    width: auto;
+  }
+  main .__content .__column .__project_block img {
+    max-width: 100%;
+  }
+  main .__content .__column .__project_block p {
+    padding-bottom: 46px;
+    font-size: 22px;
+  }
+  main .__content .__column .R {
+    margin-right: 0px;
+  }
+  main .__content .__column .L {
+    margin-left: 0px;
+  }
+  .__container .__elipse_container {
+    height: 240px;
+  }
+  .__container .__elipse_container .__elipse {
+    width: 716px;
+    height: 220px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 518px) {
+  main .__content {
+    max-width: 375px;
+  }
+  main .__content .__little_padding {
+    padding-bottom: 26px;
+    font-size: 16px;
+  }
+  main .__content h1 {
+    font-size: 33px !important;
+    line-height: 26px !important;
+  }
+  main .__content .__column .__project_block p {
+    padding-top: 13px;
+    padding-bottom: 36px;
+    font-size: 16px;
+  }
+  .__container .__elipse_container {
+    margin-top: 74px;
+    margin-bottom: 80px;
+    height: 140px;
+  }
+  .__container .__elipse_container .__elipse {
+    width: 343px;
+    height: 120px;
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

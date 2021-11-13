@@ -1,0 +1,157 @@
+$maxWidthContainer: 1600;
+$maxWidthContainer768: 768;
+$maxWidthContainer375: 375;
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+    $addSize: $startSize - $minSize;
+    @if $type == 1 {
+        //только если меньше контейнера
+        #{$property}: $startSize + px;
+        @media (max-width : #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+        }
+    }
+    @else if $type == 2 {
+        //только если больше контейнера
+        #{$property} : $startSize + px;
+        @media (min-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+        }
+    }
+    @else if $type == 3 {
+        //только если больше контейнера
+        #{$property}: $startSize + px;
+        @media (max-width : #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320})) !important;
+        }
+    }
+    @else if $type == 768 {
+        #{$property}: $startSize + px;
+        @media (max-width : #{$maxWidthContainer768 + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer768 - 320})) !important;
+        }
+    }
+    @else if $type == 375 {
+        #{$property}: $startSize + px;
+        @media (max-width : #{$maxWidthContainer375 + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer375 - 320})) !important;
+        }
+    }
+    @else {
+        //всегда
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+}
+.__container {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-size: 76px;
+        line-height: 66px;
+        padding-bottom: 26px;
+        overflow: hidden;
+        white-space: nowrap;
+        span {
+            line-height: 70px;
+            display: block;
+        }
+    }
+    p {
+        font-size: 22px;
+        overflow: hidden;
+        span {
+            display: block;
+        }
+    }
+    .__elipse_container {
+        max-width: 100%;
+        margin-top: 46px;
+        display: flex;
+        justify-content: center;
+        .__elipse {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 986px;
+            height: 260px;
+            border: 1px solid #373745;
+            border-radius: 60%;
+            font-size: 36px;
+        }
+    }
+}
+@media(max-height:780px) {
+    .__container {
+        padding-top: 200px;
+        flex-direction: column !important;
+        max-width: 768px;
+        h1 {
+            font-size: 66px;
+            line-height: 56px;
+            padding-bottom: 20px;
+        }
+        p {
+            font-size: 22px;
+        }
+        .__elipse_container {
+            .__elipse {
+                width: 716px;
+                height: 220px;
+                font-size: 26px;
+            }
+        }
+    }
+}
+@media(max-width:1276px) {
+    .__container {
+        @include adaptiv-value('padding-top', 250, 190, 768);
+        flex-direction: column !important;
+        max-width: 768px;
+        h1 {
+            font-size: 66px;
+            line-height: 56px;
+            padding-bottom: 20px;
+        }
+        p {
+            font-size: 22px;
+        }
+        .__elipse_container {
+            .__elipse {
+                width: 716px;
+                height: 220px;
+                font-size: 26px;
+            }
+        }
+    }
+}
+@media (max-width: 760px) {
+    .__container{
+        h1 {
+            @include adaptiv-value("font-size", 66, 27, 768);
+        }
+    }
+}
+@media (max-width: 518px) {
+    .__container {
+        // max-width: 375px;
+        h1 {
+            
+            line-height: 26px;
+            padding-bottom: 0px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .__elipse_container {
+            .__elipse {
+                width: 343px;
+                height: 120px;
+                font-size: 18px;
+            }
+        }
+    }
+    
+}

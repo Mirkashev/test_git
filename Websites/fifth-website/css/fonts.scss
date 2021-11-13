@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "RoxboroughCF-Bold";
+    src: url("../files/fonts/RoxboroughCF-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RoxboroughCF-BoldItalic";
+    src: url("../files/fonts/RoxboroughCF-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "NeueMontreal-Regular";
+    src: url("../files/fonts/NeueMontreal-Regular.ttf");
+}
+
+@font-face {
+    font-family: "NeueMontreal-Bold";
+    src: url("../files/fonts/RoxboroughCF-Bold.ttf");
+}
+
+.__font_roxborough {
+    font-family: RoxboroughCF-Bold;
+}
+
+.__font_roxborough_italic {
+    font-family: RoxboroughCF-BoldItalic;
+    text-indent: 131px;
+}

@@ -1,0 +1,45 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #373745;
+  height: 72px;
+}
+
+nav .__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+nav .__column .dash {
+  width: 24px;
+  height: 2px;
+  background-color: #373745;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+nav .__logo {
+  font-size: 22px;
+}
+
+@media (max-width: 760px) {
+  nav .__column {
+    display: none !important;
+  }
+  nav .__logo {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=nav&footer.css.map */
